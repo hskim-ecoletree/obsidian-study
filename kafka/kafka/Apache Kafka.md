@@ -44,7 +44,7 @@
 
 ## 2.2. 통신 모델 구성도
 
-![Kafka Components](https://docs.cloudera.com/runtime/7.2.17/kafka-overview/images/kafka-partition.png)
+![Kafka Components|600](https://docs.cloudera.com/runtime/7.2.17/kafka-overview/images/kafka-partition.png)
 [그림 1] 카프카 주요 컴포넌트 구성 및 통신 _(출처 https://docs.cloudera.com/runtime/7.2.17/kafka-overview/topics/kafka-overview-partitions.html)_
 
 __** 카프카 통신 모델의 이점__
@@ -58,7 +58,7 @@ __** 카프카 통신 모델의 이점__
 
 ## 2.3.  토픽과 파티션
 
-![[Pasted image 20231218192002.png]]
+![[Pasted image 20231218192002.png|600]]
 [그림 2] 카프카 토픽과 파티션 _(출처 https://kafka.apache.org/documentation/#introduction)_
 
 토픽은 이름이 있는 데이터 스트림으로 어떤 데이터들을 논리적인 구분하는 단위이다. 
@@ -94,7 +94,7 @@ var record = new ProducerRecord<String, String>("topic_a", partitionNumber, key,
 파티션의 데이터는 결국 로그의 형태로 저장되는데 계속 하나의 로그 파일에 데이터를 계속 쓸 경우 성능 이슈가 발생하므로 로그를 일정 개수로 분리하여 관리한다.
 이때 일정 개수로 분리된 로그의 단위를 (파일) 세그먼트라 한다.
 
-![Partition log segements](https://docs.cloudera.com/runtime/7.2.17/kafka-overview/images/kafka-partition-log-segments.png)
+![Partition log segements|700](https://docs.cloudera.com/runtime/7.2.17/kafka-overview/images/kafka-partition-log-segments.png)
 [그림 3] 파티션의 로그 세그먼트 _(출처 https://docs.cloudera.com/runtime/7.2.17/kafka-overview/topics/kafka-overview-logs-and-log-segments.html)_
 
 ## 2.6.  카프카 클러스터
